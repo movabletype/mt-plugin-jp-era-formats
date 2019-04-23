@@ -1,0 +1,9 @@
+name: JPEraFormats
+callbacks:
+  init_app: |
+    sub {
+      require MT::Util;
+      require MT::Plugin::JPEraFormats::Util;
+      *MT::Util::format_ts = \&MT::Plugin::JPEraFormats::Util::format_ts;
+    }
+
