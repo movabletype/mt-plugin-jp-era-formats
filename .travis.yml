@@ -4,5 +4,5 @@ services:
 script:
   - git clone -b develop --depth 1  https://github.com/movabletype/movabletype.git mt
   - cp -r mt/* .
-  - docker run -t -v $PWD:/mt /mt masiuchi/docker-mt-test:tursty-full bash -c "prove plugins/JPEraFormats/t"
+  - docker run -t -v $PWD:/mt -w /mt masiuchi/docker-mt-test:tursty-full bash -c "prove plugins/JPEraFormats/t"
 
