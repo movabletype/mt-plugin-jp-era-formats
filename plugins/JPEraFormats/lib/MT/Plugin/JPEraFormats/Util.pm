@@ -1,6 +1,7 @@
 package MT::Plugin::JPEraFormats::Util;
 use strict;
 use warnings;
+use utf8;
 
 use Date::Japanese::Era;
 
