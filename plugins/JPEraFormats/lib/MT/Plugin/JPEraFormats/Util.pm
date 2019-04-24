@@ -92,8 +92,7 @@ sub format_ts {
         ## In Italian, the date always come before the month.
         $format =~ s!%b %e!%e %b!g;
     }
-    _replace_jp_era_formats( \$format, \%f );
-
+    _replace_jp_era_formats( \$format, \%f, $lang );
     $format =~ s!%(\w)!$f{$1}!g if defined $format;
 
     ## FIXME: This block must go away after Languages hash
@@ -123,9 +122,14 @@ sub _add_jp_era_formats {
 }
 
 sub _replace_jp_era_formats {
-    my ( $format, $f ) = @_;
-    return unless exists $f->{EC};
-    $$format =~ s!%(E[cCxXyY])!$f->{$1}!g if defined $$format;
+    my ( $format, $f, $lang ) = @_;
+    return unless defined $$format;
+    if ( $lang eq 'ja' ) {
+        $$format =~ s!%(E[cCxXyY])!$f->{$1}!g;
+    }
+    else {
+        $$format =~ s{%E([cCxXyY])}{%$1}g;
+    }
 }
 
 1;

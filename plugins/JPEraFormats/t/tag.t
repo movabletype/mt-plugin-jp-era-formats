@@ -21,14 +21,17 @@ use MT;
 use MT::Test;
 my $app = MT->instance;
 
-my $blog_id = 1;
-
 filters {
     template => [qw( chomp )],
     expected => [qw( chomp )],
 };
 
 $test_env->prepare_fixture('db');
+
+my $blog_id = 1;
+my $blog = $app->model('blog')->load( $blog_id ) or die;
+$blog->date_language('ja');
+$blog->save or die;
 
 MT::Test::Tag->run_perl_tests($blog_id);
 
@@ -80,8 +83,15 @@ __END__
 平成26年10月10日 10時10分10秒
 
 ===
+--- SKIP
 --- template
 <mt:Date ts="20141010101010" format="%Ec" language="en"/>
 --- expected
 Oct 10, 2014 10:10:10 AM
+
+===
+--- template
+<mt:Date ts="20141010101010" format="%EY" language="en"/>
+--- expected
+2014
 
