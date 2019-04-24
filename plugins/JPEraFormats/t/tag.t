@@ -37,6 +37,7 @@ MT::Test::Tag->run_perl_tests($blog_id);
 __END__
 
 ===
+--- SKIP
 --- template
 <mt:Date ts="20141010101010" format="%%Ey" />
 --- expected
