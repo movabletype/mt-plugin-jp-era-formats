@@ -4,6 +4,7 @@ callbacks:
     sub {
       require MT::Util;
       require MT::Plugin::JPEraFormats::Util;
+      no warnings 'redefine';
       *MT::Util::format_ts = \&MT::Plugin::JPEraFormats::Util::format_ts;
     }
 
