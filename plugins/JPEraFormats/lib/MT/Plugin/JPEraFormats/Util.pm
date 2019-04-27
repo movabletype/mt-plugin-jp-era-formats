@@ -106,8 +106,11 @@ sub format_ts {
 
 sub _add_jp_era_formats {
     my ($f) = @_;
-    my $jp_era = Date::Japanese::Era->new( $f->{Y}, $f->{m}, $f->{d} )
-      or return;
+    my $jp_era = Date::Japanese::Era->new( $f->{Y}, $f->{m}, $f->{d} );
+    unless ($jp_era) {
+        warn "Date::Japanese::Era->new died: $@" if $@ && $MT::DebugMode;
+        return;
+    }
     $f->{EC} = $jp_era->name;
     $f->{Ey} = $jp_era->year;
     if ( $f->{Ey} == 1 ) {
