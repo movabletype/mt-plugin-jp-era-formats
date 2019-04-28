@@ -9,6 +9,15 @@ Movable Type の[日付に関するテンプレートタグの format モディ�
 * %EY
 * %Ey
 
+## ダウンロード
+
+* [バージョン 0.1 (2019/04/28)](https://github.com/miniuchi/mt-plugin-jp-era-formats/releases/download/0.1/mt-plugin-jp-era-formats-0.1.zip)
+
+## インストール
+
+* ダウンロードした zip ファイルを展開します。
+* 展開してできた `mt-plugin-jp-era-formats/plugins/JPEraFormats` ディレクトリを、 MT の plugins ディレクトリの中にコピーします。
+
 ## 使い方
 
 ### %EC
