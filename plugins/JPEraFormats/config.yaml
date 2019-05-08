@@ -5,7 +5,7 @@ description: 日付に関するテンプレートタグの format モディフ�
 version: 0.1
 author_name: 'Six Apart, Ltd.'
 author_link: https://www.sixapart.jp/
-plugin_link: https://github.com/miniuchi/mt-plugin-jp-era-formats
+plugin_link: https://github.com/movabletype/mt-plugin-jp-era-formats
 
 callbacks:
   init_app: |
