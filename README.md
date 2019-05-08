@@ -11,7 +11,10 @@ Movable Type の[日付に関するテンプレートタグの format モディ�
 
 ## ダウンロード
 
+* [バージョン 0.11 (2019/05/08)](https://github.com/movabletype/mt-plugin-jp-era-formats/releases/download/0.11/mt-plugin-jp-era-formats-0.11.zip)
 * [バージョン 0.1 (2019/04/28)](https://github.com/movabletype/mt-plugin-jp-era-formats/releases/download/0.1/mt-plugin-jp-era-formats-0.1.zip)
+
+[更新履歴](https://github.com/movabletype/mt-plugin-jp-era-formats/releases)
 
 ## インストール
 
