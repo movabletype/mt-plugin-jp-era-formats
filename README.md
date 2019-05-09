@@ -86,6 +86,7 @@ Movable Type の[日付に関するテンプレートタグの format モディ�
 
 ## フィードバック
 
+本プラグインは Movable Type 製品サポートの対象外となります。
 不具合・ご要望は GitHub リポジトリの Issues の方までご連絡ください。
 
 https://github.com/movabletype/mt-plugin-jp-era-formats/issues
