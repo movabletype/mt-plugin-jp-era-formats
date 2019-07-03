@@ -1,5 +1,7 @@
 # JPEraFormats プラグイン for Movable Type
 
+[![Build Status](https://travis-ci.org/movabletype/mt-docs-data-api-reference.svg?branch=master)](https://travis-ci.org/movabletype/mt-docs-data-api-reference)
+
 Movable Type の[日付に関するテンプレートタグの format モディファイア](https://www.movabletype.jp/documentation/appendices/date-formats.html)で、和暦表示を可能にします。
 
 具体的には下記の値を追加します。（日本語のみ）
