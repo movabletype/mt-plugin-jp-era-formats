@@ -3,7 +3,7 @@ id: JPEraFormats
 key: JPEraFormats
 description: 日付に関するテンプレートタグの format モディファイアで、和暦表示を可能にします。
 version: 0.11
-author_name: 'Six Apart, Ltd.'
+author_name: 'Six Apart Ltd.'
 author_link: https://www.sixapart.jp/
 plugin_link: https://github.com/movabletype/mt-plugin-jp-era-formats
 
