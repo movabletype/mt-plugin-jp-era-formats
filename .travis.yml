@@ -5,5 +5,5 @@ script:
   - git clone -b develop --depth 1  https://github.com/movabletype/movabletype.git mt
   - cp -r mt/* .
   - cp mt/.proverc .
-  - docker run -t -v $PWD:/mt -w /mt masiuchi/docker-mt-test:trusty-full bash -c "prove plugins/JPEraFormats/t"
+  - docker run -t -v $PWD:/mt -w /mt movabletype/test:trusty bash -c "prove plugins/JPEraFormats/t"
 
